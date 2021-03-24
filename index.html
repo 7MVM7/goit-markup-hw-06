@@ -566,17 +566,25 @@
 
       </div>
 
-      <div>
-        <b>Подпишитесь на рассылку</b>
 
-      </div>
-      <form>
+      <form class="mailing">
+
+        <div class="text-mailing">
+          <b>Подпишитесь на рассылку</b>
+
+        </div>
+
         <div>
           <label for="name" id="e-mail"></label>
-          <input type="text" id="e-mail" placeholder="E-mail">
+          <input type="text" id="e-mail" placeholder="E-mail" class="mailing-input">
         </div>
-        <div>
-          <button type="submit">Подписаться</button>
+        <div class="button-form">
+          <button class="bt-mail" type="submit">Подписаться</button>
+          <svg class="vector-bt">
+            <use href="./images/vector/sprite.svg#icon-icon-send">
+
+            </use>
+          </svg>
         </div>
       </form>
 
@@ -613,6 +621,7 @@
     <div class="form-field">
       <label for="tel">Телефон</label>
       <input type="tel" name="tel" id="tel" required>
+
 
 
     </div>
