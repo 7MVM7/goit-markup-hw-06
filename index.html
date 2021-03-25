@@ -73,7 +73,6 @@
 
         <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
 
-
       </div>
 
     </section>
@@ -567,33 +566,34 @@
       </div>
 
 
-      <form class="mailing">
 
-        <div class="text-mailing">
-          <b>Подпишитесь на рассылку</b>
 
-        </div>
+      <div class="div-mailing">
+        <b class="text-mailing">Подпишитесь на рассылку</b>
+        <form class="mailing">
 
-        <div>
+
           <label for="name" id="e-mail"></label>
           <input type="text" id="e-mail" placeholder="E-mail" class="mailing-input">
-        </div>
-        <div class="button-form">
+
+
           <button class="bt-mail" type="submit">
-            <span>Подписаться</span> <svg class="vector-bt">
+            <span class="sign-up">Подписаться</span>
+            <svg class="vector-bt">
               <use href="./images/vector/sprite.svg#icon-icon-send">
 
               </use>
-            </svg></button>
+            </svg>
+          </button>
 
-        </div>
-      </form>
 
+        </form>
+      </div>
     </div>
 
   </footer>
 
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hiddenm" data-modal>
     <div class="modal">
 
       <button type="button" class="close-modal-btn" data-modal-close>
@@ -604,59 +604,62 @@
         </svg>
 
       </button>
+      <p class="text-title">Оставьте свои данные, мы вам перезвоним</p>
+      <form class="form">
 
-      <script src="./js/modal.js"></script>
+        <div class="form-field">
+          <label for="name" class="form-label">Имя</label>
+          <input class="form-label" type="text" name="name" id="name" required minlength="2">
+          <svg class="men-icon-form">
+            <use href="./images/vector/sprite.svg#icon-man">
+
+            </use>
+          </svg>
+        </div>
+
+        <div class="form-field">
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" required>
+
+
+
+        </div>
+
+        <div class=" form-field">
+          <label for="mail">Почта</label>
+          <input type="email" name="mail" id="mail" required>
+
+
+        </div>
+
+        <div class="form-field">
+          <label for="comment">Комментарий</label>
+
+          <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+
+        </div>
+
+        <div class="form-field">
+          <ul class="check-options">
+            <li>
+              <input type="checkbox" required name="сonsent" id="сonsent">
+              <label for="сonsent">Соглашаюсь с рассылкой и принимаю <a href="">Условия
+                  договора</a> </label>
+            </li>
+          </ul>
+        </div>
+
+        <button type="submit">Отправить</button>
+
+      </form>
+
+      <!-- <script src="./js/modal.js"></script> -->
     </div>
 
 
   </div>
 
-  <form class="form">
-    <p>Оставьте свои данные, мы вам перезвоним</p>
-    <div class="form-field">
-      <label for="name" class="form-label">Имя</label>
-      <input class="form-label" type="text" name="name" id="name" required minlength="2">
 
-    </div>
-
-    <div class="form-field">
-      <label for="tel">Телефон</label>
-      <input type="tel" name="tel" id="tel" required>
-
-
-
-    </div>
-
-    <div class=" form-field">
-      <label for="mail">Почта</label>
-      <input type="email" name="mail" id="mail" required>
-
-
-    </div>
-
-    <div class="form-field">
-      <label for="comment">Комментарий</label>
-
-      <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
-
-    </div>
-
-    <div class="form-field">
-      <ul class="check-options">
-        <li>
-          <input type="checkbox" required name="сonsent" id="сonsent">
-          <label for="сonsent">Соглашаюсь с рассылкой и принимаю Условия
-            договора</label>
-        </li>
-      </ul>
-    </div>
-
-
-
-
-    <button type="submit">Отправить</button>
-
-  </form>
 
 
 </body>
