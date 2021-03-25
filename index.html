@@ -593,7 +593,7 @@
 
   </footer>
 
-  <div class="backdrop is-hiddenm" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
 
       <button type="button" class="close-modal-btn" data-modal-close>
@@ -607,9 +607,10 @@
       <p class="text-title">Оставьте свои данные, мы вам перезвоним</p>
       <form class="form">
 
+        <label for="name" class="form-label">Имя</label>
+
         <div class="form-field">
-          <label for="name" class="form-label">Имя</label>
-          <input class="form-label" type="text" name="name" id="name" required minlength="2">
+          <input class="form-name" type="text" name="name" id="name" required minlength="2">
           <svg class="men-icon-form">
             <use href="./images/vector/sprite.svg#icon-man">
 
@@ -617,25 +618,33 @@
           </svg>
         </div>
 
+        <label for="tel" class="form-label">Телефон</label>
         <div class="form-field">
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" required>
+          <input class="form-tel" type="tel" name="tel" id="tel" required>
+          <svg class="tel-icon-form">
+            <use href="./images/vector/sprite.svg#icon-Vector-tel">
 
+            </use>
+          </svg>
 
 
         </div>
+
+        <label for="mail" class="form-label">Почта</label>
 
         <div class=" form-field">
-          <label for="mail">Почта</label>
-          <input type="email" name="mail" id="mail" required>
+          <input class="form-mail" type="email" name="mail" id="mail" required>
+          <svg class="mail-icon-form">
+            <use href="./images/vector/sprite.svg#icon-Vector-mail">
 
+            </use>
+          </svg>
 
         </div>
 
+        <label for="comment" class="form-label">Комментарий</label>
         <div class="form-field">
-          <label for="comment">Комментарий</label>
-
-          <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+          <textarea class="textarea-form" name="comment" id="comment" placeholder="Введите текст"></textarea>
 
         </div>
 
@@ -653,7 +662,7 @@
 
       </form>
 
-      <!-- <script src="./js/modal.js"></script> -->
+      <script src="./js/modal.js"></script>
     </div>
 
 
