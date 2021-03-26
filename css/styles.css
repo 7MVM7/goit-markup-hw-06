@@ -694,8 +694,11 @@ img {
   color: var(--white-color);
 }
 
-.mailing-input {
+.footer-mail-label {
   margin-right: 12px;
+}
+
+.mailing-input {
   background: #2f303a;
   min-width: 358px;
   height: 50px;
@@ -729,9 +732,6 @@ img {
   border: none;
   background: var(--accent-color);
   cursor: pointer;
-}
-
-.sign-up {
   font-family: var(--main-font);
 
   font-weight: 700;
@@ -1123,7 +1123,7 @@ textarea {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
+  cursor: pointer;
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--accent-color);
