@@ -903,6 +903,12 @@ img {
   background: #ffffff;
 }
 
+.close-modal-btn:hover .btn-close,
+.close-modal-btn:focus .btn-close {
+  fill: var(--accent-color);
+  transition: var(--fill-change);
+}
+
 .text-title {
   display: block;
   margin-top: 40px;
