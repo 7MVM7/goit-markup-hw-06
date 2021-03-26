@@ -925,7 +925,7 @@ img {
 .form-field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
   position: relative;
 }
 .form-field input {
@@ -1109,6 +1109,7 @@ textarea {
   padding-bottom: 10px;
   padding-left: 56px;
   padding-right: 56px;
+  margin-top: 30px;
   border: none;
   border-radius: 4px;
   font-family: var(--main-font);
