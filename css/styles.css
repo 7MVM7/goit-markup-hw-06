@@ -933,6 +933,14 @@ img {
 
 .form-label {
   margin-bottom: 4px;
+  font-family: var(--main-font);
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: #757575;
 }
 
 .men-icon-form {
@@ -941,7 +949,7 @@ img {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-
+  cursor: pointer;
   width: 18px;
   height: 18px;
 
@@ -958,6 +966,7 @@ img {
 }
 
 .form-name {
+  cursor: pointer;
   transition: var(--border-color-change);
 }
 
@@ -969,9 +978,11 @@ img {
   top: 50%;
   transform: translateY(-50%);
   transition: var(--fill-change);
+  cursor: pointer;
 }
 
 .form-tel {
+  cursor: pointer;
   transition: var(--border-color-change);
 }
 
@@ -985,6 +996,7 @@ img {
 }
 
 .form-mail {
+  cursor: pointer;
   transition: var(--border-color-change);
 }
 
@@ -996,6 +1008,7 @@ img {
   top: 50%;
   transform: translateY(-50%);
   transition: var(--fill-change);
+  cursor: pointer;
 }
 
 .form-mail:focus {
@@ -1061,6 +1074,7 @@ textarea {
   background-size: contain;
   border-radius: 2px;
   background-image: url("../images/vector/Vector.svg");
+  cursor: pointer;
 }
 
 .checkbox-input:checked + .checkbox-label::before {
@@ -1071,5 +1085,33 @@ textarea {
 }
 
 .checkbox-input:focus + .checkbox-label::before {
-  box-shadow: var(--accent-color);
+  box-shadow: 0 0 0 2px #2196f3;
+}
+
+.link-check {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.submit-form {
+  align-self: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 56px;
+  padding-right: 56px;
+  border: none;
+  border-radius: 4px;
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
