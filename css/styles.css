@@ -699,6 +699,7 @@ img {
   background: #2f303a;
   min-width: 358px;
   height: 50px;
+  outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -706,10 +707,15 @@ img {
   padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
-
+  transition: var(--border-color-change);
   align-items: center;
   letter-spacing: 0.03em;
   color: var(--white-color);
+}
+
+.mailing-input:hover,
+.mailing-input:focus {
+  border-color: var(--accent-color);
 }
 
 .bt-mail {
