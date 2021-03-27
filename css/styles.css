@@ -1039,17 +1039,6 @@ img {
   transition: var(--border-color-change);
 }
 
-.check-options {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.check-options li {
-  display: flex;
-  align-items: center;
-}
-
 .check-options label {
   margin-left: 7px;
 }
